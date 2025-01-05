@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "spotify-organizer"
+version = "0.1.0"
+description = ""
+authors = ["Alejandro González Momblán <agelrenorenardo@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+spotipy = "^2.23.0"
+rich = "^13.7.0"
+requests = "^2.32.3"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.group.types.dependencies]
+types-requests = "^2.32.0.20241016"
+
+[tool.poetry.group.dev.dependencies]
+requests-pprint = "^1.2.1"
+
+[tool.poetry.scripts]
+spotify-organizer = "spotify_organizer.__main__:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
